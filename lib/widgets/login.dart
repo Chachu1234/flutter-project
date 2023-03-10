@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/screens/secondScreen.dart';
 import 'package:mobile_app/widgets/signUp.dart';
 
 class LoginPage extends StatefulWidget {
@@ -38,7 +39,11 @@ class _LoginPageState extends State<LoginPage> {
             ElevatedButton(
               child: const Text('Login'),
               onPressed: () {
-                // Perform login functionality here
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SecondScreen(),
+                    ));
               },
             ),
             const SizedBox(

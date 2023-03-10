@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/screens/secondScreen.dart';
 
 import 'screens/home_page.dart';
 
@@ -10,6 +11,7 @@ class MyApp extends StatelessWidget {
   MyApp({super.key});
   final Map<String, WidgetBuilder> routes = {
     '/home': (context) => const Home_Page(),
+    '/second': (context) => const SecondScreen(),
   };
 
   @override
